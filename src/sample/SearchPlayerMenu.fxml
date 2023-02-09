@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="699.0" prefWidth="938.0" styleClass="anchor-pane" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchPlayerMenuController">
+   <children>
+      <ButtonBar layoutX="184.0" layoutY="120.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="op1button" layoutX="116.0" layoutY="44.0" mnemonicParsing="false" onAction="#op1action" prefHeight="40.0" prefWidth="367.0" styleClass="click-submenu1" stylesheets="@Design.css" text="1. By Player Name">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Button fx:id="op2button" layoutX="116.0" layoutY="150.0" mnemonicParsing="false" onAction="#op2action" prefHeight="40.0" prefWidth="367.0" styleClass="click-submenu1" stylesheets="@Design.css" text="2. By Club and Country">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Button fx:id="op3button" layoutX="116.0" layoutY="258.0" mnemonicParsing="false" onAction="#op3action" prefHeight="40.0" prefWidth="367.0" styleClass="click-submenu1" stylesheets="@Design.css" text="3. By Position">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Button fx:id="op4button" layoutX="116.0" layoutY="352.0" mnemonicParsing="false" onAction="#op4action" prefHeight="40.0" prefWidth="367.0" styleClass="click-submenu1" stylesheets="@Design.css" text="4. By Salary Range">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Button fx:id="op5button" layoutX="116.0" layoutY="439.0" mnemonicParsing="false" onAction="#op5action" prefHeight="40.0" prefWidth="367.0" styleClass="click-submenu1" stylesheets="@Design.css" text="5. Country wise Player Count">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Button fx:id="op6button" layoutX="116.0" layoutY="531.0" mnemonicParsing="false" onAction="#op6action" prefHeight="40.0" prefWidth="367.0" styleClass="click-submenu1" stylesheets="@Design.css" text="6. Back to Main menu">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Label fx:id="pname" layoutX="505.0" layoutY="48.0" prefHeight="31.0" prefWidth="90.0" text="Player's name" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="pnameText" layoutX="603.0" layoutY="51.0" prefHeight="26.0" prefWidth="179.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="Go1" layoutX="796.0" layoutY="51.0" mnemonicParsing="false" onAction="#Go1Action" text="Go" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="clubName" layoutX="504.0" layoutY="205.0" prefHeight="31.0" prefWidth="90.0" text="Club name" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="countryName" layoutX="505.0" layoutY="153.0" prefHeight="31.0" prefWidth="90.0" text="Country name" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="CountryNameText" layoutX="603.0" layoutY="157.0" prefHeight="26.0" prefWidth="179.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="clubnameText" layoutX="603.0" layoutY="207.0" prefHeight="26.0" prefWidth="179.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="Go2" layoutX="796.0" layoutY="208.0" mnemonicParsing="false" onAction="#Go2Action" text="Go" visible="false">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Label fx:id="positionName" layoutX="505.0" layoutY="262.0" prefHeight="31.0" prefWidth="90.0" text="Position name" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="positionNameText" layoutX="603.0" layoutY="264.0" prefHeight="26.0" prefWidth="179.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="Go3" layoutX="796.0" layoutY="265.0" mnemonicParsing="false" onAction="#Go3Action" text="Go" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="uRange" layoutX="505.0" layoutY="352.0" prefHeight="31.0" prefWidth="90.0" text="Upper Range" visible="false">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <Label fx:id="Lrange" layoutX="505.0" layoutY="392.0" prefHeight="31.0" prefWidth="90.0" text="Lower Range" visible="false">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <TextField fx:id="UrangeText" layoutX="603.0" layoutY="354.0" prefHeight="26.0" prefWidth="179.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="LrangeText" layoutX="603.0" layoutY="394.0" prefHeight="26.0" prefWidth="179.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="Go4" layoutX="796.0" layoutY="394.0" mnemonicParsing="false" onAction="#Go4Action" text="Go" visible="false">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <ImageView fx:id="im" fitHeight="233.0" fitWidth="309.0" layoutX="628.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/sub1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

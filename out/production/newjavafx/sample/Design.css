@@ -1,0 +1,19 @@
+.search-box
+{-fx-background-color:	#ADD8E6;
+-fx-background-radius:100;
+}
+.anchor-pane
+{-fx-background-color:#ffa500	;
+}
+.box
+{-fx-background-color:	#ADD8E6;
+}
+.player-card
+{-fx-background-color:	#000000;
+}
+.submenu1
+{-fx-background-color:	#b491c8;
+}
+.click-submenu1
+{-fx-background-radius:100;
+}
